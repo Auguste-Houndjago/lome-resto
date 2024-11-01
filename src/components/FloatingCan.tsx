@@ -20,7 +20,7 @@ const FloatingCan = forwardRef<Group, FloatingCanProps>(
     {
       flavor = "lemonLime",
       floatSpeed = 1.5,
-      rotationIntensity = 2,
+      rotationIntensity = 4,
       floatIntensity = 1,
       floatingRange = [-0.1, 0.1],
       children,
@@ -52,7 +52,7 @@ const FloatingCan = forwardRef<Group, FloatingCanProps>(
 
 
                 {children}
-                <SodaCan flavor={flavor} scale={5} />
+                <SodaCan flavor={flavor} scale={4} />
       </PresentationControls>
 
 
