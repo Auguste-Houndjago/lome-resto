@@ -25,3 +25,73 @@ body {
     text-wrap: balance;
   }
 }
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.flip-logo {
+	-webkit-animation: flip-horizontal-bottom 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) 1 alternate-reverse;
+	        animation: flip-horizontal-bottom 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) 1 alternate-reverse;
+}
+
+.group:hover path {
+    stroke-width: 2; /* Nouvelle épaisseur au survol */
+    transition: stroke-width 5s ease;
+    
+  }
+  
+  .group:hover path:nth-child(1){
+    transform: scale(105%);
+    transition: 0.5s ease-in-out;   
+}
+
+.group:hover path:nth-child(6){
+    transform: scale(105%);
+    transition: 0.5s ease-in-out; 
+    transition-delay: 0.8s;  
+}
+
+
+
+.lettre {
+    @apply translate-y-0 fill-[#b2828a];
+  }
+  
+  .group:hover .lettre {
+    
+    @apply opacity-100 transform -translate-y-5 fill-transparent transition-all duration-[4s];
+
+  }
+
+  
+
+
+ @-webkit-keyframes flip-horizontal-bottom {
+    0% {
+      -webkit-transform: rotateX(0);
+              transform: rotateX(0);
+    }
+    100% {
+      -webkit-transform: rotateX(-80deg);
+              transform: rotateX(-80deg);
+    }
+  }
+  @keyframes flip-horizontal-bottom {
+    0% {
+      -webkit-transform: rotateX(0);
+              transform: rotateX(0);
+    }
+    100% {
+      -webkit-transform: rotateX(-80deg);
+              transform: rotateX(-80deg);
+    }
+  }
+  
+
+  .objet{
+
+    background-color: transparent;
+  }
